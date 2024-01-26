@@ -9,7 +9,9 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 public class DepartmentServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DepartmentServiceApplication.class, args);
+		SpringApplication application = new SpringApplication(DepartmentServiceApplication.class);
+		application.setAdditionalProfiles("local");
+		application.run(args);
 	}
 
 }

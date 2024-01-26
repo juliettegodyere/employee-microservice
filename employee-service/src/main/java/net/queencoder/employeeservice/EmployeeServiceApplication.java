@@ -24,7 +24,9 @@ public class EmployeeServiceApplication {
 	// }
 
 	public static void main(String[] args) {
-		SpringApplication.run(EmployeeServiceApplication.class, args);
+		SpringApplication application = new SpringApplication(EmployeeServiceApplication.class);
+		application.setAdditionalProfiles("local");
+		application.run(args);
 	}
 
 }
