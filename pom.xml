@@ -34,6 +34,6 @@
 		<module>employee-service</module>
 		<!-- <module>inventory-service</module> -->
 		<module>service-registry</module>
-		<!-- <module>api-gateway</module> -->
+		<module>api-gateway</module>
 	</modules>
 </project>
