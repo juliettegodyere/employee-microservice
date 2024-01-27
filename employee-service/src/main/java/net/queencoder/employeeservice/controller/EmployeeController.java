@@ -16,7 +16,7 @@ import net.queencoder.employeeservice.service.EmployeeService;
 
 @RestController
 @AllArgsConstructor
-@RequestMapping("api/employees")
+@RequestMapping("/api/employees")
 public class EmployeeController {
     private EmployeeService employeeService;
     
