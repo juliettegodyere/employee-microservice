@@ -6,7 +6,7 @@ This repository houses a comprehensive microservices project developed using a s
 - Employee-service
 
 ## Cloud Services
-- Service discover using Netflix EurekaServer
+- Service registry using Netflix EurekaServer
 
 ## API Communication
 The employee-service communicates with the department-service using @FeignClient.  
