@@ -18,10 +18,10 @@ public class EmployeeServiceApplication {
 	// 	return new RestTemplate();
 	// }
 
-	// @Bean
-	// public WebClient webClient(){
-	// 	return WebClient.builder().build();
-	// }
+	@Bean
+	public WebClient webClient(){
+		return WebClient.builder().build();
+	}
 
 	public static void main(String[] args) {
 		SpringApplication application = new SpringApplication(EmployeeServiceApplication.class);

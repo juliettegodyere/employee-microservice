@@ -11,6 +11,7 @@ This repository houses a comprehensive microservices project developed using a s
 - Config Server
 - Spring Cloud Bus
 - Distributed tracing with Micrometer and Zipkin
+- Circuit Breaker with Resilience4J
 
 ## API Communication
 The employee-service communicates with the department-service using @FeignClient.  
