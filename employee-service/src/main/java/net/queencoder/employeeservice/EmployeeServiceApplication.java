@@ -28,5 +28,4 @@ public class EmployeeServiceApplication {
 		application.setAdditionalProfiles("local");
 		application.run(args);
 	}
-
 }
