@@ -9,6 +9,7 @@ This repository houses a comprehensive microservices project developed using a s
 - Service registry using Netflix EurekaServer
 - API Gateway
 - Config Server
+- Spring Cloud Bus
 
 ## API Communication
 The employee-service communicates with the department-service using @FeignClient.  
