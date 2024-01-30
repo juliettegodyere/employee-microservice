@@ -14,6 +14,7 @@ import lombok.extern.slf4j.Slf4j;
 import net.queencoder.employeeservice.dto.APIResponseDto;
 import net.queencoder.employeeservice.dto.DepartmentDto;
 import net.queencoder.employeeservice.dto.EmployeeDto;
+import net.queencoder.employeeservice.dto.OrganizationDto;
 import net.queencoder.employeeservice.entity.Employee;
 import net.queencoder.employeeservice.exception.EmailAlreadyExistException;
 import net.queencoder.employeeservice.exception.ResourceNotFoundException;
@@ -73,12 +74,18 @@ public class EmployeeServiceImpl implements EmployeeService{
 
     //    DepartmentDto departmentDto = apiClient.getDepartmentByCode(employee.getDepartmentCode());
 
+    OrganizationDto organizationDto = webClient.get()
+        .uri("http://localhost:8083/api/organizations/"+employee.getOrganizationCode())
+        .retrieve()
+        .bodyToMono(OrganizationDto.class)
+        .block();
+        log.info("organizationDto Code {}", organizationDto);
          EmployeeDto employeeDto = EmployeeMapper.mapToEmployeeDto(employee);
          
         APIResponseDto apiResponseDto = new APIResponseDto();
         apiResponseDto.setEmployee(employeeDto);
         apiResponseDto.setDepartment(departmentDto);
-
+        apiResponseDto.setOrganzation(organizationDto);
 
         return apiResponseDto;
 

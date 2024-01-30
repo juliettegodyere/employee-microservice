@@ -1,8 +1,12 @@
-package net.queencoder.employeeservice.entity;
+package net.queencoder.organizationservice.entity;
 
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+
+import java.time.LocalDateTime;
+
+import org.hibernate.annotations.CreationTimestamp;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -17,22 +21,20 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "employees")
-public class Employee {
+@Table(name = "organization")
+public class Organization {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(nullable = false)
-    private String firstName;
+    private String organizationName;
 
-    @Column(nullable = false)
-    private String lastName;
+    private String organizationDescription;
 
     @Column(nullable = false, unique = true)
-    private String email;
-
-    private String departmentCode;
-
     private String organizationCode;
+
+    @CreationTimestamp
+    private LocalDateTime createdDate;
 }
