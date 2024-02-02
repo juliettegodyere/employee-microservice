@@ -15,3 +15,9 @@ This repository houses a comprehensive microservices project developed using a s
 
 ## API Communication
 The employee-service communicates with the department-service using @FeignClient.  
+
+## Frontend
+React 
+
+## Swagger API Test URLs
+- http://localhost:8080/swagger-ui/index.html
