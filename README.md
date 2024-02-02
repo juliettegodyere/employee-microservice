@@ -19,5 +19,7 @@ The employee-service communicates with the department-service using @FeignClient
 ## Frontend
 React 
 
-## Swagger API Test URLs
-- http://localhost:8080/swagger-ui/index.html
+## Swagger API Documentation Test URLs
+- http://localhost:8080/swagger-ui/index.html - DEPARTMENT-SERVICE
+- http://localhost:8081/swagger-ui/index.html - EMPLOYEE-SERVICE
+- http://localhost:8083/swagger-ui/index.html - ORGANISATION_SERVICE
