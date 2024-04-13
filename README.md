@@ -4,6 +4,7 @@ This repository houses a comprehensive microservices project developed using a s
 ## Microservices
 - Department-service
 - Employee-service
+- Organization-service
 
 ## Cloud Services
 - Service registry using Netflix EurekaServer
@@ -22,4 +23,7 @@ React
 ## Swagger API Documentation Test URLs
 - http://localhost:8080/swagger-ui/index.html - DEPARTMENT-SERVICE
 - http://localhost:8081/swagger-ui/index.html - EMPLOYEE-SERVICE
-- http://localhost:8083/swagger-ui/index.html - ORGANISATION_SERVICE
+- http://localhost:8083/swagger-ui/index.html - ORGANISATION-SERVICE
+
+## Others
+1. Used Spring Cloud Config Server Encryption and Decryption feature to manage pushing sensitive data to Github. https://docs.spring.io/spring-cloud-config/docs/current/reference/html/#_encryption_and_decryption
